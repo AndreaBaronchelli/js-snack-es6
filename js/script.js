@@ -18,6 +18,12 @@ const bikes = [
     },
 ];
 
+let lightestBike = bikes[0]
+
 for(let i = 0; i < bikes.length; i++){
-    
-}
+    if(bikes[i].peso < lightestBike.peso) {
+        lightestBike = bikes[i];
+    };
+};
+
+console.log(lightestBike);
