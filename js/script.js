@@ -21,7 +21,8 @@ const bikes = [
 let lightestBike = bikes[0]
 
 for(let i = 0; i < bikes.length; i++){
-    if(bikes[i].peso < lightestBike.peso) {
+    const{peso} = bikes[i];
+    if(peso < lightestBike.peso) {
         lightestBike = bikes[i];
     };
 };
@@ -68,10 +69,11 @@ console.log(teams);
 let newTeams = [];
 
 for(let i = 0; i < teams.length; i++){
+    const{name, fouls} = teams[i];
     newTeams.push(
         {
-        name: teams[i].name,
-        fouls: teams[i].fouls
+        name: name,
+        fouls: fouls,
         }
     );
 };
