@@ -72,8 +72,8 @@ for(let i = 0; i < teams.length; i++){
     const{name, fouls} = teams[i];
     newTeams.push(
         {
-        name: name,
-        fouls: fouls,
+        name,
+        fouls,
         }
     );
 };
